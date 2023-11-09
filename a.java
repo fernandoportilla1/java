@@ -1,3 +1,17 @@
+//"Descendente"
+linkedList.sort((o1, o2) -> o2.getCédula().compareTo(o1.getCédula()));
+
+for (Persona persona : linkedList) {
+    System.out.println(persona.getCédula());
+}
+
+//"Ascendente"
+linkedList.sort((o1, o2) -> o1.getCédula().compareTo(o2.getCédula()));
+
+for (Persona persona : linkedList) {
+    System.out.println(persona.getCédula());
+}
+
 LinkedList<Candidato> candidatos;
     Map<Candidato, Integer> votos;
 
